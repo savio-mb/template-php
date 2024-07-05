@@ -32,3 +32,7 @@ function view(string $view, array $data = [])
         var_dump($th->getMessage());
     }
 }
+
+function redirect(string $to){
+    return header("Location: " . $to);
+}
